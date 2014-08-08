@@ -27,7 +27,8 @@
 	Router::connect('/', array('controller' => 'pages', 'action' => 'home'));
 	Router::connect('/about', array('controller' => 'pages', 'action' => 'about'));
 	Router::connect('/blog', array('controller' => 'pages', 'action' => 'blog'));
-	Router::connect('/order', array('controller' => 'order', 'action' => 'order'));
+	Router::connect('/order', array('controller' => 'pages', 'action' => 'order'));
+	Router::connect('/contact', array('controller' => 'pages', 'action' => 'contact'));
 
 /**
  * Load all plugin routes. See the CakePlugin documentation on
