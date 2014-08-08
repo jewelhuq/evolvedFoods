@@ -30,6 +30,11 @@ body {
 #rightContent {
 	width: 75%;
 }
+
+#centeredContent {
+	width: 70%;
+	margin: auto;
+}
 /******************************* HEADER ******************************/
 
 #header {
@@ -80,7 +85,7 @@ body {
 	display:inline;
 }
 
-/******************************* SIDEBAR ****************************/
+/******************************* HOME SIDEBAR ****************************/
 
 #sidebar {
 	width: 20%;
@@ -88,6 +93,11 @@ body {
 }
 #sidebar img {
 	float: left;
+}
+
+/********************************* ABOUT ME ******************************/
+#aboutMePicture {
+	margin: 10px;
 }
 
 
