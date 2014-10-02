@@ -6,6 +6,7 @@ App::uses('AppModel', 'Model');
  * @property User $User
  */
 class Role extends AppModel {
+	const NEW_USER = 4;
 
 /**
  * Validation rules
@@ -47,5 +48,9 @@ class Role extends AppModel {
 			'counterQuery' => ''
 		)
 	);
+    public $actsAs = array('Acl' => array('type' => 'requester'));
 
+    public function parentNode() {
+        return null;
+    }
 }

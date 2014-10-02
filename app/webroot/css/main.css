@@ -98,4 +98,46 @@ body {
 	margin: 10px;
 }
 
+/****************************** CONTACT FORM ******************************/
+#UserContactForm {
+	margin: auto;
+	text-align: center;
+}
+
+div.centeredInput {
+	height: auto;
+	padding: 1%;
+}
+
+div.centeredInput label{
+	float: left;
+	display: block;
+	vertical-align: text-top;
+}
+
+div.centeredInput select, 
+div.centeredInput input,
+div.centeredInput textArea{
+	width: 60%;
+}
+
+#UserContactForm fieldset{
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	border-radius: 25px;
+}
+
+label {
+    display: block;
+    font-size: 110%;
+    margin: 0 10px 3px 0;
+    text-align: right;
+    width: 30%;
+}
+
+input, select {
+	padding: 1%;
+	clear: both;
+}
+
 

@@ -3,9 +3,10 @@
 <head>
 	<?php echo $this->Html->charset(); ?>
 	<title>
-		Title to go here
+		Evolved Foods, LLC
 	</title>
-	<?php echo $this->Html->meta('icon')?>		
+	<?php echo $this->Html->meta('icon')?>	
+	<?php echo $this->Html->script('jquery-1.11.1.min');?>
 	<?php 
 		echo $this->Html->css('main');
 		echo $this->fetch('meta');

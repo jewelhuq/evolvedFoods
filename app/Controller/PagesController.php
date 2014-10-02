@@ -37,6 +37,16 @@ class PagesController extends AppController {
  */
 	public $uses = array();
 	
+	/**
+	 * All views in Pages controller are accessible to anyone, no matter if they are logged in or not.
+	 */
+	public function beforeFilter() {
+		parent::beforeFilter();
+
+		// For CakePHP 2.1 and up
+		$this->Auth->allow();
+	}	
+	
 	public function home(){
 		//empty
 	}
@@ -46,10 +56,6 @@ class PagesController extends AppController {
 	}
 	
 	public function blog(){
-		//empty
-	}
-	
-	public function contact(){
 		//empty
 	}
 	
