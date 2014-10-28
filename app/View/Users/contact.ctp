@@ -12,10 +12,10 @@
 			echo "Your contact request has been sent.  Someone from Evolved Foods will get back to you soon!";
 		}
 		else{
-			echo $this->Form->input('first_name', array('value'=>'Jasmun'));
-			echo $this->Form->input('last_name', array('value'=>'Hendrick'));
-			echo $this->Form->input('email', array('value'=>'jasmun@gmail.com'));
-			echo $this->Form->input('message', array('type'=>'textarea', 'placeholder'=>'Tell us a bit about your food preferences', 'id'=>'messageTextArea'));
+			echo $this->Form->input('first_name');
+			echo $this->Form->input('last_name');
+			echo $this->Form->input('email');
+			echo $this->Form->input('message', array('type'=>'textarea', 'placeholder'=>'Tell us a bit about your food preferences'));
 			echo $this->Form->submit();
 		}
 	?>
