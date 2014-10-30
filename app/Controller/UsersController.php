@@ -1,5 +1,6 @@
 <?php
 App::uses('AppController', 'Controller');
+App::uses('CakeEmail', 'Network/Email');
 /**
  * Users Controller
  *
@@ -65,6 +66,15 @@ class UsersController extends AppController {
 			
 			$this->User->create();
 			if ($this->User->save($this->request->data)) {
+				$Email = new CakeEmail();
+				$Email->config('gmail');
+				//TO-DO:: Figure out the proper configuration for using GreenGeeks webmail
+				//$Email->config('unlessWeb');
+				$Email->from(array($this->request->data['User']['email'] => $this->request->data['User']['first_name']));
+				$Email->to('jasmun@unlessweb.com');
+				$Email->subject('Someone is interested in Evolved Foods....');
+				$Email->replyTo($this->request->data['User']['email']);
+				$Email->send($this->request->data['User']['message']);
 				return $this->redirect(array('action' => 'contact', true));
 			} else {
 				$this->Session->setFlash(__('The user could not be saved. Please, try again.'));

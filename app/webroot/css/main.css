@@ -98,6 +98,14 @@ body {
 	margin: 10px;
 }
 
+/********************************* FORMS **********************************/
+
+#UserContactForm fieldset, #orderFieldset{
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	border-radius: 25px;
+}
+
 /****************************** CONTACT FORM ******************************/
 #UserContactForm {
 	margin: auto;
@@ -119,12 +127,6 @@ div.centeredInput select,
 div.centeredInput input,
 div.centeredInput textArea{
 	width: 60%;
-}
-
-#UserContactForm fieldset{
-	-webkit-border-radius: 25px;
-	-moz-border-radius: 25px;
-	border-radius: 25px;
 }
 
 label {
