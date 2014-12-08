@@ -55,7 +55,7 @@ class PagesController extends AppController {
 		//empty
 	}
 	
-	public function blog(){
+	public function blogPosts(){
 		//empty
 	}
 	

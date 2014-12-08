@@ -1701,6 +1701,7 @@ function addslashes_gpc($gpc) {
  * @param mixed $value The value to be stripped.
  * @return mixed Stripped value.
  */
+if(!function_exists('stripslashes_deep')) {
 function stripslashes_deep($value) {
 	if ( is_array($value) ) {
 		$value = array_map('stripslashes_deep', $value);
@@ -1714,6 +1715,7 @@ function stripslashes_deep($value) {
 	}
 
 	return $value;
+}
 }
 
 /**
