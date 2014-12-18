@@ -8,7 +8,7 @@
 	<?php require(ROOT.'/blog/wp-blog-header.php'); ?>					
 	<?php $posts = get_posts('numberposts=10&order=ASC&orderby=post_title');?>
 	<?php foreach ($posts as $post) : start_wp(); ?>
-		<a href="/blog/index.php?p=<?php the_ID(); ?>"><?php the_title()?></a> - <?php the_date()?><br/>
+		<a href="<?php echo FULL_BASE_URL?>/blog/index.php?p=<?php the_ID(); ?>"><?php the_title()?></a> - <?php the_date()?><br/>
 		<?php echo get_the_excerpt()?>
 	<?php endforeach;?>
 </div>
