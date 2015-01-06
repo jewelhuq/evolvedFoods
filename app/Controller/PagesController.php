@@ -59,7 +59,7 @@ class PagesController extends AppController {
 		//empty
 	}
 	
-	public function order() {
+	public function kitchen() {
 		//empty
 	}
 }
